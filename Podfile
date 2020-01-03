@@ -29,7 +29,7 @@ abstract_target 'CommonPods' do
         platform :ios, '10.0'
         project 'ComplexExample/ComplexExample.xcodeproj'
         
-        pod 'Realm'
+        pod 'RealmSwift'
         pod 'FMDB'
         
     end

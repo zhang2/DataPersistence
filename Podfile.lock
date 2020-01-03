@@ -2,27 +2,31 @@ PODS:
   - FMDB (2.7.5):
     - FMDB/standard (= 2.7.5)
   - FMDB/standard (2.7.5)
-  - Realm (4.3.0):
-    - Realm/Headers (= 4.3.0)
-  - Realm/Headers (4.3.0)
+  - Realm (4.1.0):
+    - Realm/Headers (= 4.1.0)
+  - Realm/Headers (4.1.0)
+  - RealmSwift (4.1.0):
+    - Realm (= 4.1.0)
   - SnapKit (5.0.1)
 
 DEPENDENCIES:
   - FMDB
-  - Realm
+  - RealmSwift
   - SnapKit
 
 SPEC REPOS:
   trunk:
     - FMDB
     - Realm
+    - RealmSwift
     - SnapKit
 
 SPEC CHECKSUMS:
   FMDB: 2ce00b547f966261cd18927a3ddb07cb6f3db82a
-  Realm: 9357c3589555793e1860a7104a7412bca4a48d99
+  Realm: 5d1453468eca02c901c50b8a356f4a98a15b57aa
+  RealmSwift: 1d238caa5c64a590c669beef1a7e858a6cf55a1c
   SnapKit: 97b92857e3df3a0c71833cce143274bf6ef8e5eb
 
-PODFILE CHECKSUM: 69c1c0f87d5227706c167f16fbbe46f49fe8ef99
+PODFILE CHECKSUM: f11f4d58271dc18a37689214efa19aae89c9c074
 
 COCOAPODS: 1.8.3
