@@ -1,0 +1,6 @@
+framework module Pods_CommonPods_MianProject {
+  umbrella header "Pods-CommonPods-MianProject-umbrella.h"
+
+  export *
+  module * { export * }
+}
