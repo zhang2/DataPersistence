@@ -21,6 +21,8 @@ abstract_target 'CommonPods' do
     target 'SimpleExample' do
         platform :ios, '10.0'
         project 'SimpleExample/SimpleExample.xcodeproj'
+        
+         pod 'Realm'
     end
 
     target 'ComplexExample' do
