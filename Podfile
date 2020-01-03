@@ -22,12 +22,16 @@ abstract_target 'CommonPods' do
         platform :ios, '10.0'
         project 'SimpleExample/SimpleExample.xcodeproj'
         
-         pod 'Realm'
+        
     end
 
     target 'ComplexExample' do
         platform :ios, '10.0'
         project 'ComplexExample/ComplexExample.xcodeproj'
+        
+        pod 'Realm'
+        pod 'FMDB'
+        
     end
     
     target 'MianProject' do
