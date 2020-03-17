@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -13,6 +13,11 @@
 		18220D2923BEE56200956DBA /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 18220D2723BEE56200956DBA /* Main.storyboard */; };
 		18220D2B23BEE56300956DBA /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 18220D2A23BEE56300956DBA /* Assets.xcassets */; };
 		18220D2E23BEE56300956DBA /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 18220D2C23BEE56300956DBA /* LaunchScreen.storyboard */; };
+		1833255C2420B5D000BBFF28 /* ArchiveViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1833255B2420B5D000BBFF28 /* ArchiveViewController.swift */; };
+		1833255E2420B5E000BBFF28 /* KeychainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1833255D2420B5E000BBFF28 /* KeychainViewController.swift */; };
+		183325602420B5F200BBFF28 /* UserDefaultViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1833255F2420B5F200BBFF28 /* UserDefaultViewController.swift */; };
+		183325622420B60300BBFF28 /* PlistViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 183325612420B60300BBFF28 /* PlistViewController.swift */; };
+		183325662420C4B600BBFF28 /* testPlist.plist in Resources */ = {isa = PBXBuildFile; fileRef = 183325652420C4B600BBFF28 /* testPlist.plist */; };
 		67759AF3D818082736A6FD95 /* Pods_CommonPods_MianProject.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3C318CC2277CCB50D5B4C3D8 /* Pods_CommonPods_MianProject.framework */; };
 /* End PBXBuildFile section */
 
@@ -25,6 +30,11 @@
 		18220D2A23BEE56300956DBA /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		18220D2D23BEE56300956DBA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		18220D2F23BEE56300956DBA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		1833255B2420B5D000BBFF28 /* ArchiveViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArchiveViewController.swift; sourceTree = "<group>"; };
+		1833255D2420B5E000BBFF28 /* KeychainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KeychainViewController.swift; sourceTree = "<group>"; };
+		1833255F2420B5F200BBFF28 /* UserDefaultViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserDefaultViewController.swift; sourceTree = "<group>"; };
+		183325612420B60300BBFF28 /* PlistViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlistViewController.swift; sourceTree = "<group>"; };
+		183325652420C4B600BBFF28 /* testPlist.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = testPlist.plist; sourceTree = "<group>"; };
 		2C319BB6F7DFD184D08BBE18 /* Pods-CommonPods-MianProject.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CommonPods-MianProject.release.xcconfig"; path = "Target Support Files/Pods-CommonPods-MianProject/Pods-CommonPods-MianProject.release.xcconfig"; sourceTree = "<group>"; };
 		3C318CC2277CCB50D5B4C3D8 /* Pods_CommonPods_MianProject.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_CommonPods_MianProject.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		5E60CD33214D986724CC1D55 /* Pods-CommonPods-MianProject.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CommonPods-MianProject.debug.xcconfig"; path = "Target Support Files/Pods-CommonPods-MianProject/Pods-CommonPods-MianProject.debug.xcconfig"; sourceTree = "<group>"; };
@@ -66,12 +76,49 @@
 				18220D2123BEE56200956DBA /* AppDelegate.swift */,
 				18220D2323BEE56200956DBA /* SceneDelegate.swift */,
 				18220D2523BEE56200956DBA /* ViewController.swift */,
+				1833255A2420B5A400BBFF28 /* Archive */,
+				183325592420B58D00BBFF28 /* Keychain */,
+				183325582420B57700BBFF28 /* UserDefault */,
+				183325572420B56500BBFF28 /* Plist */,
 				18220D2723BEE56200956DBA /* Main.storyboard */,
 				18220D2A23BEE56300956DBA /* Assets.xcassets */,
 				18220D2C23BEE56300956DBA /* LaunchScreen.storyboard */,
 				18220D2F23BEE56300956DBA /* Info.plist */,
 			);
 			path = MianProject;
+			sourceTree = "<group>";
+		};
+		183325572420B56500BBFF28 /* Plist */ = {
+			isa = PBXGroup;
+			children = (
+				183325652420C4B600BBFF28 /* testPlist.plist */,
+				183325612420B60300BBFF28 /* PlistViewController.swift */,
+			);
+			path = Plist;
+			sourceTree = "<group>";
+		};
+		183325582420B57700BBFF28 /* UserDefault */ = {
+			isa = PBXGroup;
+			children = (
+				1833255F2420B5F200BBFF28 /* UserDefaultViewController.swift */,
+			);
+			path = UserDefault;
+			sourceTree = "<group>";
+		};
+		183325592420B58D00BBFF28 /* Keychain */ = {
+			isa = PBXGroup;
+			children = (
+				1833255D2420B5E000BBFF28 /* KeychainViewController.swift */,
+			);
+			path = Keychain;
+			sourceTree = "<group>";
+		};
+		1833255A2420B5A400BBFF28 /* Archive */ = {
+			isa = PBXGroup;
+			children = (
+				1833255B2420B5D000BBFF28 /* ArchiveViewController.swift */,
+			);
+			path = Archive;
 			sourceTree = "<group>";
 		};
 		58D9B285D3E0D1C15359BFB4 /* Pods */ = {
@@ -153,6 +200,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				18220D2E23BEE56300956DBA /* LaunchScreen.storyboard in Resources */,
+				183325662420C4B600BBFF28 /* testPlist.plist in Resources */,
 				18220D2B23BEE56300956DBA /* Assets.xcassets in Resources */,
 				18220D2923BEE56200956DBA /* Main.storyboard in Resources */,
 			);
@@ -207,9 +255,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1833255E2420B5E000BBFF28 /* KeychainViewController.swift in Sources */,
+				183325602420B5F200BBFF28 /* UserDefaultViewController.swift in Sources */,
+				183325622420B60300BBFF28 /* PlistViewController.swift in Sources */,
 				18220D2623BEE56200956DBA /* ViewController.swift in Sources */,
 				18220D2223BEE56200956DBA /* AppDelegate.swift in Sources */,
 				18220D2423BEE56200956DBA /* SceneDelegate.swift in Sources */,
+				1833255C2420B5D000BBFF28 /* ArchiveViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
